@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fun English Adventure 🌟</title>
+<title>English Explorers Club 🚀</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #FFF9F0;
+  --bg: #F8F5FF;
   --white: #ffffff;
   --dark: #1a1a2e;
   --mid: #4a4a6a;
   --light-text: #888;
-  --border: #e8e0d5;
-  --accent1: #FF6B6B;
-  --accent2: #4ECDC4;
-  --accent3: #FFD93D;
-  --accent4: #A855F7;
+  --border: #e8e0f5;
+  --accent1: #7C3AED;
+  --accent2: #EC4899;
+  --accent3: #F59E0B;
+  --accent4: #10B981;
   --accent5: #3B82F6;
-  --accent6: #22C55E;
+  --accent6: #EF4444;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -29,16 +29,14 @@ body {
   color: var(--dark);
 }
 
-/* ── HEADER ── */
 .site-header {
   background: var(--dark);
-  padding: 0;
   border-bottom: 4px solid var(--accent3);
 }
 .header-top {
   text-align: center;
   padding: 2.5rem 2rem 1.5rem;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d1b69 60%, #4c1d95 100%);
 }
 .header-top .site-name {
   font-family: 'Playfair Display', serif;
@@ -56,14 +54,12 @@ body {
   text-transform: uppercase;
 }
 
-/* ── NAV ── */
 nav {
   background: rgba(255,255,255,0.05);
   border-top: 1px solid rgba(255,255,255,0.1);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0;
 }
 nav a {
   color: rgba(255,255,255,0.75);
@@ -72,17 +68,16 @@ nav a {
   font-weight: 800;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  padding: 0.85rem 1.2rem;
+  padding: 0.85rem 1.1rem;
   transition: all 0.2s;
   border-bottom: 3px solid transparent;
 }
-nav a:hover, nav a.active {
+nav a:hover {
   color: var(--accent3);
   border-bottom-color: var(--accent3);
   background: rgba(255,255,255,0.05);
 }
 
-/* ── LAYOUT ── */
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -93,7 +88,6 @@ nav a:hover, nav a.active {
   align-items: start;
 }
 
-/* ── MAIN FEED ── */
 main { min-width: 0; }
 
 .feed-label {
@@ -107,7 +101,6 @@ main { min-width: 0; }
   border-bottom: 2px solid var(--border);
 }
 
-/* ── POST CARD ── */
 .post-card {
   background: var(--white);
   border-radius: 16px;
@@ -122,20 +115,16 @@ main { min-width: 0; }
   box-shadow: 0 8px 30px rgba(0,0,0,0.12);
 }
 
-/* post header banner */
-.post-banner {
-  height: 10px;
-}
-.post-banner.c1 { background: linear-gradient(90deg, var(--accent5), #1D4ED8); }
-.post-banner.c2 { background: linear-gradient(90deg, var(--accent1), #C2410C); }
-.post-banner.c3 { background: linear-gradient(90deg, var(--accent6), #15803D); }
-.post-banner.c4 { background: linear-gradient(90deg, #F97316, #EA580C); }
-.post-banner.c5 { background: linear-gradient(90deg, var(--accent4), #7E22CE); }
-.post-banner.c6 { background: linear-gradient(90deg, var(--accent2), #0F766E); }
+.post-banner { height: 10px; }
+.post-banner.c1 { background: linear-gradient(90deg, #7C3AED, #4C1D95); }
+.post-banner.c2 { background: linear-gradient(90deg, #EC4899, #BE185D); }
+.post-banner.c3 { background: linear-gradient(90deg, #F59E0B, #B45309); }
+.post-banner.c4 { background: linear-gradient(90deg, #10B981, #065F46); }
+.post-banner.c5 { background: linear-gradient(90deg, #3B82F6, #1D4ED8); }
+.post-banner.c6 { background: linear-gradient(90deg, #EF4444, #B91C1C); }
 
-.post-body { padding: 2rem 2.5rem 2rem; }
+.post-body { padding: 2rem 2.5rem; }
 
-/* post meta */
 .post-meta {
   display: flex;
   align-items: center;
@@ -144,246 +133,135 @@ main { min-width: 0; }
   flex-wrap: wrap;
 }
 .post-icon {
-  width: 44px;
-  height: 44px;
+  width: 44px; height: 44px;
   border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem; flex-shrink: 0;
 }
-.post-icon.c1 { background: #EFF6FF; }
-.post-icon.c2 { background: #FEF2F2; }
-.post-icon.c3 { background: #F0FDF4; }
-.post-icon.c4 { background: #FFF7ED; }
-.post-icon.c5 { background: #FAF5FF; }
-.post-icon.c6 { background: #F0FDFA; }
+.post-icon.c1 { background: #F5F3FF; }
+.post-icon.c2 { background: #FDF2F8; }
+.post-icon.c3 { background: #FFFBEB; }
+.post-icon.c4 { background: #ECFDF5; }
+.post-icon.c5 { background: #EFF6FF; }
+.post-icon.c6 { background: #FEF2F2; }
 
 .post-tag {
-  font-size: 0.7rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  padding: 0.3rem 0.75rem;
-  border-radius: 20px;
+  font-size: 0.7rem; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 1.5px;
+  padding: 0.3rem 0.75rem; border-radius: 20px;
 }
-.post-tag.c1 { background: #EFF6FF; color: #1D4ED8; }
-.post-tag.c2 { background: #FEF2F2; color: #DC2626; }
-.post-tag.c3 { background: #F0FDF4; color: #16A34A; }
-.post-tag.c4 { background: #FFF7ED; color: #EA580C; }
-.post-tag.c5 { background: #FAF5FF; color: #9333EA; }
-.post-tag.c6 { background: #F0FDFA; color: #0D9488; }
+.post-tag.c1 { background: #F5F3FF; color: #6D28D9; }
+.post-tag.c2 { background: #FDF2F8; color: #BE185D; }
+.post-tag.c3 { background: #FFFBEB; color: #B45309; }
+.post-tag.c4 { background: #ECFDF5; color: #065F46; }
+.post-tag.c5 { background: #EFF6FF; color: #1D4ED8; }
+.post-tag.c6 { background: #FEF2F2; color: #B91C1C; }
 
-.post-num {
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: var(--light-text);
-  margin-left: auto;
-}
+.post-num { font-size: 0.72rem; font-weight: 700; color: var(--light-text); margin-left: auto; }
 
-/* post title */
 .post-title {
   font-family: 'Playfair Display', serif;
   font-size: clamp(1.25rem, 2.5vw, 1.7rem);
-  color: var(--dark);
-  line-height: 1.25;
-  margin-bottom: 1.5rem;
+  color: var(--dark); line-height: 1.25; margin-bottom: 1.5rem;
 }
 
-/* post sections */
-.post-section {
-  margin-bottom: 1.1rem;
-}
+.post-section { margin-bottom: 1.1rem; }
 .post-section-label {
-  font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 0.3rem;
+  font-size: 0.7rem; font-weight: 800;
+  letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.3rem;
 }
-.post-section-label.c1 { color: var(--accent5); }
-.post-section-label.c2 { color: var(--accent1); }
-.post-section-label.c3 { color: var(--accent6); }
-.post-section-label.c4 { color: #F97316; }
-.post-section-label.c5 { color: var(--accent4); }
-.post-section-label.c6 { color: var(--accent2); }
+.post-section-label.c1 { color: #7C3AED; }
+.post-section-label.c2 { color: #EC4899; }
+.post-section-label.c3 { color: #F59E0B; }
+.post-section-label.c4 { color: #10B981; }
+.post-section-label.c5 { color: #3B82F6; }
+.post-section-label.c6 { color: #EF4444; }
 
 .post-section p {
-  font-size: 0.92rem;
-  color: var(--mid);
-  line-height: 1.7;
-  font-weight: 600;
+  font-size: 0.92rem; color: var(--mid);
+  line-height: 1.7; font-weight: 600;
 }
 
-/* divider */
-.post-divider {
-  border: none;
-  border-top: 1px solid var(--border);
-  margin: 1.5rem 0;
-}
+.post-divider { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
 
-/* post footer */
 .post-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
+  display: flex; align-items: center;
+  justify-content: space-between; flex-wrap: wrap; gap: 1rem;
 }
-.post-author {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
+.post-author { display: flex; align-items: center; gap: 0.6rem; }
 .author-avatar {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  background: #f1f5f9;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem; background: #f1f5f9;
 }
-.author-info small {
-  display: block;
-  font-size: 0.7rem;
-  color: var(--light-text);
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-.author-info strong {
-  font-size: 0.82rem;
-  color: var(--dark);
-}
+.author-info small { display: block; font-size: 0.7rem; color: var(--light-text); font-weight: 700; }
+.author-info strong { font-size: 0.82rem; color: var(--dark); }
 
 .visit-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.55rem 1.25rem;
-  border-radius: 8px;
-  font-size: 0.82rem;
-  font-weight: 800;
-  text-decoration: none;
-  color: white;
-  letter-spacing: 0.5px;
-  transition: opacity 0.2s, transform 0.2s;
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 0.55rem 1.25rem; border-radius: 8px;
+  font-size: 0.82rem; font-weight: 800; text-decoration: none;
+  color: white; transition: opacity 0.2s, transform 0.2s;
 }
 .visit-btn:hover { opacity: 0.88; transform: scale(1.03); }
-.visit-btn.c1 { background: var(--accent5); }
-.visit-btn.c2 { background: var(--accent1); }
-.visit-btn.c3 { background: var(--accent6); }
-.visit-btn.c4 { background: #F97316; }
-.visit-btn.c5 { background: var(--accent4); }
-.visit-btn.c6 { background: var(--accent2); }
+.visit-btn.c1 { background: #7C3AED; }
+.visit-btn.c2 { background: #EC4899; }
+.visit-btn.c3 { background: #F59E0B; }
+.visit-btn.c4 { background: #10B981; }
+.visit-btn.c5 { background: #3B82F6; }
+.visit-btn.c6 { background: #EF4444; }
 
-/* ── SIDEBAR ── */
 aside { position: sticky; top: 1.5rem; }
 
 .widget {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: 16px; padding: 1.5rem; margin-bottom: 1.5rem;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 .widget-title {
   font-family: 'Playfair Display', serif;
-  font-size: 1.05rem;
-  color: var(--dark);
-  margin-bottom: 1rem;
-  padding-bottom: 0.75rem;
+  font-size: 1.05rem; color: var(--dark);
+  margin-bottom: 1rem; padding-bottom: 0.75rem;
   border-bottom: 2px solid var(--border);
 }
 
-/* about widget */
 .about-widget-emoji { font-size: 2.5rem; margin-bottom: 0.75rem; }
-.about-widget p {
-  font-size: 0.88rem;
-  color: var(--mid);
-  line-height: 1.6;
-  font-weight: 600;
-}
-.about-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-top: 1rem;
-}
+.about-widget p { font-size: 0.88rem; color: var(--mid); line-height: 1.6; font-weight: 600; }
+.about-badges { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem; }
 .about-badge {
-  font-size: 0.72rem;
-  font-weight: 800;
-  padding: 0.25rem 0.6rem;
-  border-radius: 20px;
-  background: #f1f5f9;
-  color: var(--mid);
+  font-size: 0.72rem; font-weight: 800;
+  padding: 0.25rem 0.6rem; border-radius: 20px;
+  background: #f1f5f9; color: var(--mid);
 }
 
-/* categories widget */
 .cat-list { list-style: none; }
 .cat-list li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.6rem 0;
-  border-bottom: 1px solid var(--border);
-  font-size: 0.88rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: color 0.2s;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.6rem 0; border-bottom: 1px solid var(--border);
+  font-size: 0.88rem; font-weight: 700;
 }
 .cat-list li:last-child { border-bottom: none; }
-.cat-list li:hover { color: var(--accent1); }
 .cat-list li span {
-  font-size: 0.75rem;
-  background: #f1f5f9;
-  padding: 0.2rem 0.5rem;
-  border-radius: 20px;
-  color: var(--light-text);
-  font-weight: 700;
+  font-size: 0.75rem; background: #f1f5f9;
+  padding: 0.2rem 0.5rem; border-radius: 20px; color: var(--light-text); font-weight: 700;
 }
 
-/* skills widget */
-.skill-item {
-  margin-bottom: 0.85rem;
-}
+.skill-item { margin-bottom: 0.85rem; }
 .skill-item .skill-label {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.8rem;
-  font-weight: 800;
-  margin-bottom: 0.3rem;
-  color: var(--dark);
+  display: flex; justify-content: space-between;
+  font-size: 0.8rem; font-weight: 800; margin-bottom: 0.3rem; color: var(--dark);
 }
-.skill-bar {
-  height: 6px;
-  background: #f1f5f9;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.skill-fill {
-  height: 100%;
-  border-radius: 10px;
-  transition: width 1s ease;
-}
+.skill-bar { height: 6px; background: #f1f5f9; border-radius: 10px; overflow: hidden; }
+.skill-fill { height: 100%; border-radius: 10px; }
 
-/* ── FOOTER ── */
 footer {
-  background: var(--dark);
-  color: rgba(255,255,255,0.5);
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.82rem;
-  font-weight: 700;
-  border-top: 4px solid var(--accent3);
-  margin-top: 3rem;
+  background: var(--dark); color: rgba(255,255,255,0.5);
+  text-align: center; padding: 2rem 1rem;
+  font-size: 0.82rem; font-weight: 700;
+  border-top: 4px solid var(--accent3); margin-top: 3rem;
 }
 footer strong { color: var(--accent3); }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   .container { grid-template-columns: 1fr; }
   aside { position: static; }
@@ -393,28 +271,24 @@ footer strong { color: var(--accent3); }
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="site-header">
   <div class="header-top">
-    <div class="site-name">✨ Fun English Adventure</div>
-    <div class="tagline">ICT Resources for 5th &amp; 6th Grade EFL Learners</div>
+    <div class="site-name">🚀 English Explorers Club</div>
+    <div class="tagline">Digital Resources for 5th &amp; 6th Grade EFL Learners</div>
   </div>
   <nav>
-    <a href="#" class="active">🏠 Home</a>
+    <a href="#">🏠 Home</a>
     <a href="#podcast">🎙️ Podcast</a>
     <a href="#roleplaying">🎭 Role-Playing</a>
     <a href="#dictionary">📖 Dictionary</a>
     <a href="#storytelling">📱 Storytelling</a>
-    <a href="#kahoot">🎮 Kahoot!</a>
-    <a href="#lyrics">🎵 LyricsTraining</a>
+    <a href="#games">🎮 Games</a>
+    <a href="#videos">🎬 Videos</a>
     <a href="#about">👋 About</a>
   </nav>
 </header>
 
-<!-- MAIN LAYOUT -->
 <div class="container">
-
-  <!-- FEED -->
   <main>
     <div class="feed-label">📚 Latest Posts — 6 Resources</div>
 
@@ -427,22 +301,22 @@ footer strong { color: var(--accent3); }
           <span class="post-tag c1">Podcast</span>
           <span class="post-num">Post #01</span>
         </div>
-        <h2 class="post-title">Tune In and Learn: BBC 6 Minute English</h2>
+        <h2 class="post-title">Listen and Discover: Storynory, Free Audio Stories for Kids</h2>
         <div class="post-section">
           <div class="post-section-label c1">What is it?</div>
-          <p>BBC 6 Minute English is a free podcast produced by the BBC Learning English team. Each episode lasts approximately six minutes and covers everyday topics such as technology, nature, sport, and culture. The language used is clear and natural, making it ideal for upper primary learners aged 10 to 12.</p>
+          <p>Storynory is a free online platform that offers a large collection of audio stories for children, including classic fairy tales, myths, original stories, and educational narratives. All stories are narrated by professional voice actors using clear, expressive, and well-paced English, making them highly suitable for non-native learners at upper primary level.</p>
         </div>
         <div class="post-section">
           <div class="post-section-label c1">Educational Value</div>
-          <p>This resource helps students develop their listening comprehension skills while expanding vocabulary in context. Each episode includes a quiz question at the beginning, encouraging students to make predictions and engage actively with the content. Transcripts are also available, which allows teachers to use the podcast for combined listening and reading activities.</p>
+          <p>Listening to stories read aloud is one of the most natural ways to acquire a language. Storynory exposes students to a rich variety of vocabulary, sentence structures, and narrative conventions in an entertaining context. The combination of audio and written transcripts on the website allows students to follow along with the text, reinforcing both listening and reading skills at the same time.</p>
         </div>
         <div class="post-section">
           <div class="post-section-label c1">How to Use it in Class</div>
-          <p>Teachers can play one episode per week as a warm-up activity. Students listen once for general understanding and a second time for specific details. Afterwards, a short class discussion or written response can consolidate learning.</p>
+          <p>Teachers can choose a story that connects with a current topic or reading unit and play it as a shared listening activity. Students can follow the transcript on screen, pause to discuss new vocabulary, and then retell the story in their own words either orally or in writing. For homework, students can choose their own story and prepare a short summary to share with the class.</p>
         </div>
         <div class="post-section">
           <div class="post-section-label c1">Benefits and Challenges</div>
-          <p>One of the main benefits of this resource is its accessibility — it is completely free and available on the BBC website and major podcast platforms. However, some episodes may include advanced vocabulary, so teachers should preview each one before using it with their students.</p>
+          <p>Storynory is completely free, requires no registration, and works on any device with internet access. The wide range of stories ensures that there is always something suitable for different interests and reading levels. One possible challenge is that some stories contain slightly archaic vocabulary from classic tales, which may require additional teacher support to explain in context.</p>
         </div>
         <hr class="post-divider">
         <div class="post-footer">
@@ -450,10 +324,10 @@ footer strong { color: var(--accent3); }
             <div class="author-avatar">👩‍🏫</div>
             <div class="author-info">
               <small>Posted by</small>
-              <strong>Anaïs Fernández Valle</strong>
+              <strong>English Explorers Club</strong>
             </div>
           </div>
-          <a class="visit-btn c1" href="https://www.bbc.co.uk/learningenglish/english/features/6-minute-english" target="_blank">🔗 Visit Resource</a>
+          <a class="visit-btn c1" href="https://www.storynory.com" target="_blank">🔗 Visit Resource</a>
         </div>
       </div>
     </article>
@@ -467,22 +341,22 @@ footer strong { color: var(--accent3); }
           <span class="post-tag c2">Role-Playing Activity</span>
           <span class="post-num">Post #02</span>
         </div>
-        <h2 class="post-title">Speak Up! Role-Playing Activities for the EFL Classroom</h2>
+        <h2 class="post-title">Real Conversations in English: Role-Play Scenarios by ESL Kids World</h2>
         <div class="post-section">
           <div class="post-section-label c2">What is it?</div>
-          <p>This resource, provided by the British Council's Teaching English platform, offers a collection of ready-to-use role-playing activities designed for English language learners. The activities present real-life communicative scenarios such as shopping, asking for directions, making plans with friends, or visiting a doctor.</p>
+          <p>ESL Kids World offers a collection of printable and digital role-play cards and scenario scripts designed specifically for young English language learners. The activities cover everyday situations such as ordering food at a café, buying tickets at a cinema, calling a friend to make plans, or checking in at a hotel — all adapted to a level appropriate for 5th and 6th grade students.</p>
         </div>
         <div class="post-section">
           <div class="post-section-label c2">Educational Value</div>
-          <p>Role-playing encourages students to use English in meaningful, authentic contexts. It develops speaking and listening skills simultaneously, while also building students' confidence when communicating in a foreign language. For 5th and 6th grade learners, this type of activity bridges the gap between classroom language and real-world communication.</p>
+          <p>Communicative competence is one of the core goals of language learning, and role-playing is one of the most effective ways to develop it. These activities push students to produce spontaneous language in a guided context, practising functional expressions, question forms, and polite register. Working in pairs or small groups also builds confidence and reduces anxiety around speaking in a foreign language.</p>
         </div>
         <div class="post-section">
           <div class="post-section-label c2">How to Use it in Class</div>
-          <p>Teachers can assign roles to pairs or small groups and give students a few minutes to prepare before performing their dialogue. The activity works well as a speaking assessment or as a fun end-of-unit task. Scripts and prompts are provided, so students at different levels can participate comfortably.</p>
+          <p>The teacher selects a scenario relevant to the current unit and distributes the role cards to pairs of students. After a short preparation time, pairs perform their dialogue in front of the class or record themselves on a tablet. The activity can be extended by asking students to create their own version of the scenario with different vocabulary or a surprise twist in the plot.</p>
         </div>
         <div class="post-section">
           <div class="post-section-label c2">Benefits and Challenges</div>
-          <p>Role-playing is highly motivating for this age group and promotes collaborative learning. A possible challenge is that some students may feel shy or reluctant to speak in front of their peers. Creating a supportive and non-judgmental classroom atmosphere is essential for this activity to be successful.</p>
+          <p>This resource is flexible, easy to adapt, and does not require any technology beyond a printed sheet or a screen. It suits different proficiency levels within the same class. The main challenge is classroom management during group work — setting clear time limits and performance expectations helps keep activities focused and productive.</p>
         </div>
         <hr class="post-divider">
         <div class="post-footer">
@@ -490,10 +364,10 @@ footer strong { color: var(--accent3); }
             <div class="author-avatar">👩‍🏫</div>
             <div class="author-info">
               <small>Posted by</small>
-              <strong>Anaïs Fernández Valle</strong>
+              <strong>English Explorers Club</strong>
             </div>
           </div>
-          <a class="visit-btn c2" href="https://www.teachingenglish.org.uk/professional-development/teachers/knowing-subject/d-g/drama-and-role-play" target="_blank">🔗 Visit Resource</a>
+          <a class="visit-btn c2" href="https://www.eslkidsworld.com/role-play-cards.html" target="_blank">🔗 Visit Resource</a>
         </div>
       </div>
     </article>
@@ -507,22 +381,22 @@ footer strong { color: var(--accent3); }
           <span class="post-tag c3">Picture Dictionary</span>
           <span class="post-num">Post #03</span>
         </div>
-        <h2 class="post-title">A Picture is Worth a Thousand Words: Visual Dictionary Online</h2>
+        <h2 class="post-title">Words Come Alive: Wordsmyth Children's Dictionary with Images</h2>
         <div class="post-section">
           <div class="post-section-label c3">What is it?</div>
-          <p>Visual Dictionary Online is a free interactive resource that organises vocabulary thematically through detailed, labelled illustrations. Topics include the human body, nature, science, transport, food, and many more. Each image is accompanied by the corresponding English word, making it an excellent tool for building and reinforcing vocabulary.</p>
+          <p>Wordsmyth is a free online dictionary platform that includes a dedicated Children's Dictionary level, featuring simple and clear definitions, example sentences, audio pronunciation, and thematic illustrations. It is specifically designed for young learners and presents vocabulary in a visually engaging and age-appropriate format, avoiding the overly complex explanations found in standard dictionaries.</p>
         </div>
         <div class="post-section">
           <div class="post-section-label c3">Educational Value</div>
-          <p>Visual dictionaries are particularly effective for learners in the 10–12 age range, as they connect new words to clear visual representations, which aids memorisation and retention. This resource supports vocabulary learning across multiple subject areas, making it a versatile tool for Content and Language Integrated Learning (CLIL) contexts as well.</p>
+          <p>Building a strong vocabulary is essential for all four language skills, and having access to a dictionary that includes visual support makes word learning far more effective for this age group. Wordsmyth not only defines words but also provides audio pronunciation, which is particularly valuable for EFL learners who may not be confident about how to say a new word correctly. The example sentences help students understand words in context rather than in isolation.</p>
         </div>
         <div class="post-section">
           <div class="post-section-label c3">How to Use it in Class</div>
-          <p>Teachers can use this dictionary to introduce new vocabulary before a reading or writing activity. Students can also explore it independently to look up unknown words. A suggested activity is to ask students to choose a theme, explore the related vocabulary, and then write a short descriptive paragraph using at least eight new words.</p>
+          <p>Teachers can use Wordsmyth as a reference tool during reading activities, asking students to look up unknown words and write their own example sentences. A more creative task is a "word of the day" routine: each student selects a word from the dictionary, learns its pronunciation, and presents it to the class with an original sentence and a drawing. This activity builds ownership over vocabulary learning.</p>
         </div>
         <div class="post-section">
           <div class="post-section-label c3">Benefits and Challenges</div>
-          <p>The main advantage of this resource is its visual and intuitive design, which makes it engaging and easy to navigate. One limitation is that it does not include audio pronunciation, so teachers may need to supplement it with a pronunciation tool or model the words themselves.</p>
+          <p>Wordsmyth is free, accessible from any device, and offers three difficulty levels, making it easy to differentiate within the same classroom. Audio support for pronunciation is a significant advantage over printed dictionaries. One limitation is that internet access is required, so teachers should plan an offline alternative for sessions with unreliable connectivity.</p>
         </div>
         <hr class="post-divider">
         <div class="post-footer">
@@ -530,10 +404,10 @@ footer strong { color: var(--accent3); }
             <div class="author-avatar">👩‍🏫</div>
             <div class="author-info">
               <small>Posted by</small>
-              <strong>Anaïs Fernández Valle</strong>
+              <strong>English Explorers Club</strong>
             </div>
           </div>
-          <a class="visit-btn c3" href="https://www.visualdictionaryonline.com/" target="_blank">🔗 Visit Resource</a>
+          <a class="visit-btn c3" href="https://www.wordsmyth.net" target="_blank">🔗 Visit Resource</a>
         </div>
       </div>
     </article>
@@ -547,22 +421,22 @@ footer strong { color: var(--accent3); }
           <span class="post-tag c4">Digital Storytelling</span>
           <span class="post-num">Post #04</span>
         </div>
-        <h2 class="post-title">Once Upon a Digital Time: Storytelling with Storybird</h2>
+        <h2 class="post-title">Tell Your Story: Book Creator for Schools</h2>
         <div class="post-section">
           <div class="post-section-label c4">What is it?</div>
-          <p>Storybird is an online creative writing platform that allows children to read, write, and illustrate their own stories using a library of professional artwork. The platform offers a wide variety of genres and visual styles, giving students the freedom to create personalised narratives in English.</p>
+          <p>Book Creator is a digital publishing tool that allows students to design and write their own illustrated e-books directly in the browser, without needing to install any software. Students can combine text, drawings, photographs, audio recordings, and video clips to produce multimodal stories in English. The platform offers a free plan for teachers that includes up to 40 books per class.</p>
         </div>
         <div class="post-section">
           <div class="post-section-label c4">Educational Value</div>
-          <p>Digital storytelling develops a broad range of language skills, including reading, writing, vocabulary, and narrative structure. By creating their own stories, students engage in meaningful and creative language production. Storybird also fosters a sense of authorship and pride in their work, which significantly increases motivation.</p>
+          <p>Creating a personal book in a foreign language is a deeply meaningful language task. Students must plan their narrative, choose vocabulary carefully, write with an awareness of their audience, and edit their own work. The multimodal nature of Book Creator also allows students with different strengths to contribute in different ways — a student who struggles with writing may shine through illustration or audio narration, making the activity genuinely inclusive.</p>
         </div>
         <div class="post-section">
           <div class="post-section-label c4">How to Use it in Class</div>
-          <p>As a guided activity, teachers can ask students to write a short story of at least five sentences using a specific set of vocabulary or grammar structures studied in class. Stories can then be shared with classmates, turning the activity into a peer-reading exercise. Teachers can also use Storybird to create model stories and share them with the class as reading comprehension activities.</p>
+          <p>The teacher sets up a class library and assigns a creative brief — for example, writing a story about an imaginary adventure, a biography of a historical figure, or a guide to their hometown in English. Students work on their books over several sessions, going through a full writing process: drafting, peer feedback, revision, and final publication. Finished books can be shared with families or other classes.</p>
         </div>
         <div class="post-section">
           <div class="post-section-label c4">Benefits and Challenges</div>
-          <p>Storybird is visually appealing and highly intuitive for this age group. The high-quality illustrations inspire even reluctant writers to engage with the task. A potential challenge is that the full range of features requires a paid subscription, although the free version is sufficient for basic storytelling activities.</p>
+          <p>Book Creator is intuitive enough for 10–12 year olds to use independently after a short introduction. The sense of producing a real, shareable product is highly motivating and gives writing a genuine purpose. The main challenge is time — a quality book project requires several sessions, so it works best as a longer project rather than a one-off activity.</p>
         </div>
         <hr class="post-divider">
         <div class="post-footer">
@@ -570,16 +444,16 @@ footer strong { color: var(--accent3); }
             <div class="author-avatar">👩‍🏫</div>
             <div class="author-info">
               <small>Posted by</small>
-              <strong>Anaïs Fernández Valle</strong>
+              <strong>English Explorers Club</strong>
             </div>
           </div>
-          <a class="visit-btn c4" href="https://storybird.com/" target="_blank">🔗 Visit Resource</a>
+          <a class="visit-btn c4" href="https://bookcreator.com" target="_blank">🔗 Visit Resource</a>
         </div>
       </div>
     </article>
 
-    <!-- POST 5: KAHOOT -->
-    <article class="post-card" id="kahoot">
+    <!-- POST 5: GAMES -->
+    <article class="post-card" id="games">
       <div class="post-banner c5"></div>
       <div class="post-body">
         <div class="post-meta">
@@ -587,22 +461,22 @@ footer strong { color: var(--accent3); }
           <span class="post-tag c5">Extra Resource 1</span>
           <span class="post-num">Post #05</span>
         </div>
-        <h2 class="post-title">Game On! Interactive Quizzes with Kahoot!</h2>
+        <h2 class="post-title">Play and Learn: Quizlet Live for Vocabulary Practice</h2>
         <div class="post-section">
           <div class="post-section-label c5">What is it?</div>
-          <p>Kahoot! is a game-based learning platform that allows teachers to create interactive quizzes, surveys, and challenges. Students participate using any device with internet access, answering questions in real time while competing against their classmates in a fun and dynamic environment.</p>
+          <p>Quizlet is a widely used digital flashcard and study platform that allows teachers to create sets of vocabulary cards which students can then practise through a variety of game modes. The Quizlet Live feature turns vocabulary revision into a real-time collaborative classroom game where students are divided into random teams and must work together to match words and definitions correctly.</p>
         </div>
         <div class="post-section">
           <div class="post-section-label c5">Educational Value</div>
-          <p>Kahoot! is an excellent tool for reviewing and consolidating grammar and vocabulary in a low-pressure, enjoyable context. The competitive but friendly format keeps students engaged and motivated, and the immediate feedback helps both teachers and learners identify areas that need further practice.</p>
+          <p>Research consistently shows that spaced repetition and active retrieval are among the most effective strategies for vocabulary retention. Quizlet is built around these principles, offering multiple study modes — flashcards, written recall, matching games, and timed tests — that target the same vocabulary from different angles. The collaborative element of Quizlet Live adds a social dimension that encourages peer learning and communication in English.</p>
         </div>
         <div class="post-section">
           <div class="post-section-label c5">How to Use it in Class</div>
-          <p>Teachers can create customised quizzes aligned with the current unit — for example, a quiz on irregular verbs, question forms, or topic-specific vocabulary. Kahoot! can be used at the end of a lesson as a review activity or before a test as a revision tool. There are also thousands of ready-made EFL quizzes available in the Kahoot! library.</p>
+          <p>Teachers create a vocabulary set linked to the current unit — for example, animals, daily routines, or describing people — and share the access code with students. For independent practice, students can use the flashcard and test modes at home. In the classroom, Quizlet Live works as an energising team activity that reviews vocabulary in a competitive but cooperative context, as a wrong answer affects the whole team and encourages discussion.</p>
         </div>
         <div class="post-section">
           <div class="post-section-label c5">Benefits and Challenges</div>
-          <p>The main strength of this resource is its ability to transform a traditional grammar or vocabulary review into an exciting classroom event. Students are consistently enthusiastic when Kahoot! is used. One challenge is that it requires a stable internet connection and at least one device per student or pair, which may not always be available in every school context.</p>
+          <p>Quizlet is available on all devices and offers a generous free plan. The ability to add images and audio to flashcard sets makes it particularly effective for EFL learners. One challenge is that the free version has some limitations on teacher features, and the most interactive classroom modes work best when every student has their own device.</p>
         </div>
         <hr class="post-divider">
         <div class="post-footer">
@@ -610,39 +484,39 @@ footer strong { color: var(--accent3); }
             <div class="author-avatar">👩‍🏫</div>
             <div class="author-info">
               <small>Posted by</small>
-              <strong>Anaïs Fernández Valle</strong>
+              <strong>English Explorers Club</strong>
             </div>
           </div>
-          <a class="visit-btn c5" href="https://kahoot.com/" target="_blank">🔗 Visit Resource</a>
+          <a class="visit-btn c5" href="https://quizlet.com" target="_blank">🔗 Visit Resource</a>
         </div>
       </div>
     </article>
 
-    <!-- POST 6: LYRICSTRAINING -->
-    <article class="post-card" id="lyrics">
+    <!-- POST 6: VIDEOS -->
+    <article class="post-card" id="videos">
       <div class="post-banner c6"></div>
       <div class="post-body">
         <div class="post-meta">
-          <div class="post-icon c6">🎵</div>
+          <div class="post-icon c6">🎬</div>
           <span class="post-tag c6">Extra Resource 2</span>
           <span class="post-num">Post #06</span>
         </div>
-        <h2 class="post-title">Learn English Through Music: LyricsTraining</h2>
+        <h2 class="post-title">Watch and Understand: English with Fun — Comprehensible Input Videos</h2>
         <div class="post-section">
           <div class="post-section-label c6">What is it?</div>
-          <p>LyricsTraining is an online platform that helps language learners improve their listening and writing skills through music. Students watch official music videos and complete the lyrics by typing missing words as they hear them. The platform offers different difficulty levels, from beginner to expert, making it adaptable to a wide range of learner profiles.</p>
+          <p>Comprehensible Input videos are short educational clips produced specifically for language learners, in which the content is delivered in English at a controlled pace and with visual support — images, gestures, and on-screen text — that helps students understand the meaning even without knowing every word. Channels such as Dreaming Spanish (English version) and English with Lucy for Beginners follow this approach, making them ideal for upper primary EFL students.</p>
         </div>
         <div class="post-section">
           <div class="post-section-label c6">Educational Value</div>
-          <p>Music is a powerful tool for language learning. It exposes students to natural pronunciation, rhythm, and intonation while making vocabulary and grammar acquisition more memorable. LyricsTraining combines listening, reading, and writing skills in a single activity, offering a genuinely integrated language learning experience.</p>
+          <p>The comprehensible input theory, developed by linguist Stephen Krashen, proposes that language is acquired most effectively when learners are exposed to content that is slightly beyond their current level but still understandable through context. These videos apply this principle directly, offering natural English in a format that does not feel like a lesson but still promotes genuine acquisition of vocabulary, grammar patterns, and pronunciation.</p>
         </div>
         <div class="post-section">
           <div class="post-section-label c6">How to Use it in Class</div>
-          <p>Teachers can select a song related to the current topic or simply one that students enjoy, and assign it as a listening gap-fill activity. After completing the activity, the class can discuss the meaning of the song, identify new vocabulary, or even write a short response. This works particularly well as a Friday activity or as a reward at the end of a productive week.</p>
+          <p>Teachers can select a short video (5–10 minutes) connected to a topic being studied — nature, history, science, or daily life — and use it as a listening and viewing activity. Students watch once without stopping, then watch again pausing at key moments to discuss or take notes. A follow-up task — a short written summary, a vocabulary list, or a discussion question — consolidates the input and moves students towards output.</p>
         </div>
         <div class="post-section">
           <div class="post-section-label c6">Benefits and Challenges</div>
-          <p>LyricsTraining is free, visually engaging, and highly motivating for learners aged 10 to 12, who often have strong connections to popular music. One consideration is that teachers should preview song content carefully to ensure it is age-appropriate before using it in class.</p>
+          <p>This type of resource exposes students to authentic, natural English in a low-anxiety format, which is particularly beneficial for learners who feel nervous about speaking. Videos are highly engaging for this age group and connect language learning to real-world knowledge. The main challenge is selecting age-appropriate content carefully, as YouTube channels vary widely in quality and suitability for primary school contexts.</p>
         </div>
         <hr class="post-divider">
         <div class="post-footer">
@@ -650,10 +524,10 @@ footer strong { color: var(--accent3); }
             <div class="author-avatar">👩‍🏫</div>
             <div class="author-info">
               <small>Posted by</small>
-              <strong>Anaïs Fernández Valle</strong>
+              <strong>English Explorers Club</strong>
             </div>
           </div>
-          <a class="visit-btn c6" href="https://lyricstraining.com/" target="_blank">🔗 Visit Resource</a>
+          <a class="visit-btn c6" href="https://www.youtube.com/@EnglishwithLucy" target="_blank">🔗 Visit Resource</a>
         </div>
       </div>
     </article>
@@ -662,12 +536,10 @@ footer strong { color: var(--accent3); }
 
   <!-- SIDEBAR -->
   <aside>
-
-    <!-- About widget -->
     <div class="widget" id="about">
       <div class="widget-title">👋 About This Blog</div>
-      <div class="about-widget-emoji">🌟</div>
-      <p>Welcome to <strong>Fun English Adventure</strong> — a digital learning hub designed for 5th and 6th Grade primary students. Each resource has been carefully selected to make English language learning engaging, interactive, and enjoyable.</p>
+      <div class="about-widget-emoji">🚀</div>
+      <p>Welcome to <strong>English Explorers Club</strong> — a curated collection of digital tools and resources to support English language learning in 5th and 6th Grade. Every resource has been chosen with engagement, accessibility, and real classroom use in mind.</p>
       <div class="about-badges">
         <span class="about-badge">🎯 Ages 10–12</span>
         <span class="about-badge">🇬🇧 EFL</span>
@@ -676,7 +548,6 @@ footer strong { color: var(--accent3); }
       </div>
     </div>
 
-    <!-- Categories widget -->
     <div class="widget">
       <div class="widget-title">📂 Categories</div>
       <ul class="cat-list">
@@ -685,52 +556,48 @@ footer strong { color: var(--accent3); }
         <li>📖 Picture Dictionary <span>1</span></li>
         <li>📱 Digital Storytelling <span>1</span></li>
         <li>🎮 Interactive Games <span>1</span></li>
-        <li>🎵 Music & Lyrics <span>1</span></li>
+        <li>🎬 Video Resources <span>1</span></li>
       </ul>
     </div>
 
-    <!-- Skills widget -->
     <div class="widget">
       <div class="widget-title">🧠 Skills Covered</div>
       <div class="skill-item">
         <div class="skill-label"><span>👂 Listening</span><span>95%</span></div>
-        <div class="skill-bar"><div class="skill-fill" style="width:95%; background: var(--accent5);"></div></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:95%;background:#7C3AED;"></div></div>
       </div>
       <div class="skill-item">
-        <div class="skill-label"><span>🗣️ Speaking</span><span>80%</span></div>
-        <div class="skill-bar"><div class="skill-fill" style="width:80%; background: var(--accent1);"></div></div>
+        <div class="skill-label"><span>🗣️ Speaking</span><span>75%</span></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:75%;background:#EC4899;"></div></div>
       </div>
       <div class="skill-item">
-        <div class="skill-label"><span>📖 Reading</span><span>75%</span></div>
-        <div class="skill-bar"><div class="skill-fill" style="width:75%; background: var(--accent6);"></div></div>
+        <div class="skill-label"><span>📖 Reading</span><span>80%</span></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:80%;background:#F59E0B;"></div></div>
       </div>
       <div class="skill-item">
-        <div class="skill-label"><span>✍️ Writing</span><span>70%</span></div>
-        <div class="skill-bar"><div class="skill-fill" style="width:70%; background: #F97316;"></div></div>
+        <div class="skill-label"><span>✍️ Writing</span><span>85%</span></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:85%;background:#10B981;"></div></div>
       </div>
       <div class="skill-item">
         <div class="skill-label"><span>📝 Vocabulary</span><span>90%</span></div>
-        <div class="skill-bar"><div class="skill-fill" style="width:90%; background: var(--accent4);"></div></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:90%;background:#3B82F6;"></div></div>
       </div>
     </div>
 
-    <!-- Subject widget -->
     <div class="widget">
       <div class="widget-title">📋 Assignment Info</div>
-      <p style="font-size:0.83rem; color:var(--mid); font-weight:600; line-height:1.6;">
-        <strong style="color:var(--dark);">Subject:</strong> ICT Tools Applied to the Learning of the English Language<br><br>
-        <strong style="color:var(--dark);">Student:</strong> Anaïs Fernández Valle<br><br>
-        <strong style="color:var(--dark);">Assignment:</strong> Create an EFL Class Blog<br><br>
+      <p style="font-size:0.83rem;color:var(--mid);font-weight:600;line-height:1.7;">
+        <strong style="color:var(--dark);">Subject:</strong> ICT Tools Applied to the Learning of the English Language<br>
+        <strong style="color:var(--dark);">Assignment:</strong> Create an EFL Class Blog<br>
+        <strong style="color:var(--dark);">Level:</strong> 5th &amp; 6th Grade Primary<br>
         <strong style="color:var(--dark);">University:</strong> UNIR
       </p>
     </div>
-
   </aside>
 </div>
 
-<!-- FOOTER -->
 <footer>
-  <p>✨ <strong>Fun English Adventure</strong> · ICT Tools Applied to the Learning of the English Language · UNIR · Anaïs Fernández Valle</p>
+  <p>🚀 <strong>English Explorers Club</strong> · ICT Tools Applied to the Learning of the English Language · UNIR</p>
 </footer>
 
 </body>
